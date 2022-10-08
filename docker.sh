@@ -17,3 +17,15 @@ sudo systemctl status docker
 
 # Set daemon to start on boot
 sudo systemctl enable docker
+
+
+# Troubleshooting #
+
+# Start container
+docker start $container_name
+
+# Stop container
+docker stop $container_name
+
+# Restart container
+docker restart $container_name
