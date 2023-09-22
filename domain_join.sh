@@ -2,10 +2,10 @@
 nano /etc/resolv.conf
 
 # set hostname
-nmcli general hostname $linuxexamplehostname
+nmcli general hostname $linuxexamplehostname.domain.com
 
 # join realm
-realm join --user=domainjoinaccount domain.com -v
+realm join --user=domainjoinaccount@DOMAIN.COM domain.com -v
 
 # add priviledged group to login
 realm permit -g securitygroup@domain.com
